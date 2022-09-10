@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-This script concatenates the 2020 thru 2022 climate files
+This script concatenates the 2020 thru 2022 climate files that we downloaded.
 '''
 import pandas as pd
 
