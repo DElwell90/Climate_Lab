@@ -4,10 +4,11 @@ This script concatenates the 2020 thru 2022 climate files
 '''
 import pandas as pd
 
+dir="~/Desktop/Climate_Lab"
 combined_climate = pd.DataFrame()
 
 for year in ['2020','2021','2022']:
-    climate_year = pd.read_csv(f'./climate_data/climate{year}.csv')
+    climate_year = pd.read_csv(f'{dir}/climate{year}.csv')
     combined_climate = pd.concat([combined_climate,climate_year],axis=0)
 
-combined_climate.to_csv('./climate_data/all_years.csv')
+combined_climate.to_csv(f'{dir}/all_years.csv')
